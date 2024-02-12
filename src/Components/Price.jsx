@@ -11,7 +11,7 @@ export default function Price() {
         <div className="row">
           <h2>Цены на эвакуатор</h2>
 
-          <div className="col-6 col-md-4 col-lg-3 mb-3">
+          <div className="card-col col-6 col-md-4 col-lg-3 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={card1} alt="" />
@@ -28,7 +28,7 @@ export default function Price() {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 mb-3">
+          <div className="card-col col-6 col-md-4 col-lg-3 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={card2} alt="" />
@@ -41,7 +41,7 @@ export default function Price() {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 mb-3">
+          <div className="card-col col-6 col-md-4 col-lg-3 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={card3} alt="" />
@@ -54,7 +54,7 @@ export default function Price() {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 mb-3">
+          <div className="card-col col-6 col-md-4 col-lg-3 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={card4} alt="" />
