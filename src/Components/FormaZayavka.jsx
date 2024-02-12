@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FormaZayavka() {
   return (
-    <section className='FormaZayavka'>
+    <section id='Form' className='FormaZayavka'>
       <div className="container">
         <form action="">
           <h3>Заказать эвакуатор</h3>

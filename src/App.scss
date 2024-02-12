@@ -1,6 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+
+#root {
+  overflow-x: hidden;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -20,12 +25,19 @@
   max-width: 1335px;
 }
 
+
+
 .Navbar{
   width: 100%;
   position: fixed;
   padding: 26px 0;
   z-index: 99;
-  .nav-body{
+  transition: 0.4s ease-in;
+
+  a{
+    cursor: pointer;
+  }
+  .nav-body{  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,10 +54,55 @@
           font-weight: 400;
           line-height: 40px; /* 250% */
           letter-spacing: 2px;
+          cursor: pointer;
+
+          &:hover{
+            color: #FFF;
+
+          }
         }
       }
     }
+
+    .nav__active{
+      transform: translateX(0) !important;
+      transition: 0.3s ease-in-out;
+
+    }
+
+    .nav__toggler{
+      cursor: pointer;
+      display: none;
+      div{
+        width: 2.5rem;
+        height: 0.2rem;
+        margin: 0.4rem;
+        background: #fff;
+        transition: 0.3s ease-in;
+      }
+    }
+
+    .toggle{
+      .line1{
+        transform: rotate(-45deg) translate(-8px, 5px);
+      }
+
+      .line2{
+        opacity: 0;
+      }
+
+      .line3{
+        transform: rotate(45deg) translate(-8px, -5px);
+      }
+    }
   }
+}
+
+.navbarActive{
+  background: rgba(30, 30, 30, 0.70);
+  backdrop-filter: saturate(180%) blur(3px) !important;
+  transition: 0.4s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .Header{
@@ -191,7 +248,7 @@
 
         button{
           display: flex;
-          width: 275px;
+          width: 100%;
           padding: 16px;
           justify-content: center;
           align-items: center;
@@ -205,6 +262,19 @@
           font-weight: 500;
           line-height: 26px; /* 144.444% */
           letter-spacing: -0.6px;
+          transition: 0.2s ease-in;
+
+
+          &:hover{
+            transition: 0.2s ease-in;
+            background: #E3E3E3;
+            color: #00205D;
+
+            svg{
+              fill: #00205D;
+              path: #00205D;
+            }
+          }
         }
       }
     }
@@ -267,6 +337,10 @@
     align-items: center;
   }
 
+  .about-info-img{
+    width: 100%;
+  }
+
   .about-info{
     h2{
       color: #000;
@@ -318,6 +392,24 @@
   }
 }
 
+.Galereya{
+  margin-bottom: 140px;
+  h2{
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    margin-bottom: 96px;
+    text-align: center;
+  }
+
+  .block{
+    margin-bottom: 50px;
+  }
+}
+
 .FormaZayavka{
   form{
     background: rgba(0, 0, 0, 0.80);
@@ -349,7 +441,7 @@
 
     input{
       display: flex;
-      width: 275px;
+      width: 100%;
       padding: 16px;
       gap: 10px;
       border-radius: 4px;
@@ -383,7 +475,6 @@
   }
 }
 
-
 .Footer{
   background: #00205D;
   padding: 120px 0;
@@ -404,6 +495,12 @@
           font-weight: 500;
           line-height: 26px; /* 144.444% */
           letter-spacing: -0.6px;
+          cursor: pointer;
+
+          &:hover{
+            color: #FFF;
+          } 
+
         }
       }
     }
@@ -473,5 +570,48 @@
     }
   }
 }
+
+.Comments{
+  margin-bottom: 100px;
+ 
+  h2{
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    margin-bottom: 90px;
+  }
+
+  .card{
+    margin-bottom: 50px;
+    .card-body{
+      .d-flex{
+        margin-bottom: 20px;
+        align-items: center;
+        gap: 20px;
+
+        h3{
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .comment-txt{
+        color: #AAA;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+      }
+    }
+  }
+}
+
+
+
+
+
 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../Images/footer-logo.svg'
 import Number from '../Images/footer-number.svg'
 import Location from '../Images/location.svg'
+import { Link } from 'react-scroll'
 
 export default function Footer() {
   return (
@@ -11,11 +12,11 @@ export default function Footer() {
 
           <div className="col-md-4">
             <ul>
-              <li><a href="">Цены</a></li>
-              <li><a href="">Преимущества</a></li>
-              <li><a href="">О нас</a></li>
-              <li><a href="">Отзывы</a></li>
-              <li><a href="">Заказать</a></li>
+              <li><Link to='Price' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>Цены</Link></li>
+              <li><Link to='Primushestva' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>Преимущетсва</Link></li>
+              <li><Link to='About' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>О нас</Link></li>
+              <li><Link to='Comments' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>Отзывы</Link></li>
+              <li><Link to='Form' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>Заказать</Link></li>
             </ul>
           </div>
 
@@ -35,9 +36,9 @@ export default function Footer() {
                 <div className="footer-number-links">
                   <h3>Наш телефон:</h3>
                   <ul className='footer-list'>
-                    <li><a href="">98 077 72 72</a></li>
-                    <li><a href="">97 480 16 16</a></li>
-                    <li><a href="">97 111 56 56</a></li>
+                    <li><a href="tel:+9989980777272">98 077 72 72</a></li>
+                    <li><a href="tel:+9989974801616">97 480 16 16</a></li>
+                    <li><a href="tel:+9989971115656">97 111 56 56</a></li>
                   </ul>
                 </div>
               </div>
