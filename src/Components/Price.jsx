@@ -3,6 +3,7 @@ import card1 from '../Images/card1.png'
 import card2 from '../Images/card2.png'
 import card3 from '../Images/card3.png'
 import card4 from '../Images/card4.png'
+import { Link } from 'react-scroll'
 
 export default function Price() {
   return (
@@ -16,14 +17,17 @@ export default function Price() {
               <div className="card-body">
                 <img src={card1} alt="" />
                 <h3>Легковые автомобили</h3>
-                <p>100.000 сум</p>
+                <p>Цена договорная</p>
 
                 <a href="tel:+9989980777272"></a>
                 <a href="tel:+9989980777272"></a>
                 <a href="tel:+9989980777272"></a>
-                <button>
-                  Заказать
-                </button>
+                <Link to='Form' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>
+                  <button>
+                    Заказать
+                  </button>
+                </Link>
+                
               </div>
             </div>
           </div>
@@ -33,10 +37,12 @@ export default function Price() {
               <div className="card-body">
                 <img src={card2} alt="" />
                 <h3>Джипы</h3>
-                <p>100.000 сум</p>
-                <button>
-                  Заказать
-                </button>
+                <p>Цена договорная</p>
+                <Link to='Form' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>
+                  <button>
+                    Заказать
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -46,10 +52,12 @@ export default function Price() {
               <div className="card-body">
                 <img src={card3} alt="" />
                 <h3>Мотоциклы</h3>
-                <p>100.000 сум</p>
-                <button>
-                   Заказать
-                </button>
+                <p>Цена договорная</p>
+                <Link to='Form' activeClass="active" spy={true} smooth={true} offset={-120} duration={100}>
+                  <button>
+                    Заказать
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -59,7 +67,7 @@ export default function Price() {
               <div className="card-body">
                 <img src={card4} alt="" />
                 <h3>Cпецтехники</h3>
-                <p>100.000 сум</p>
+                <p>Цена договорная</p>
                 <button>
                    Заказать
                 </button>

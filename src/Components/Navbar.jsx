@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 
 export default function Navbar() {
-  const[navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false)
   const [active, setActive] = useState("nav__menu");
   const [toggleIcon, setToggleIcon] = useState("nav__toggler");
 
@@ -25,6 +25,7 @@ export default function Navbar() {
         setNavbar(false)
     }
   }
+  
   window.addEventListener('scroll', changeNavbar);
 
   return (

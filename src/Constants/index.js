@@ -1,0 +1,2 @@
+export const TOKEN = "6324700687:AAHFGvkYXX0QPBCvFGfkKpz8tLvvQYqg2V0";
+export const CHAT_ID = "-1002005232381";

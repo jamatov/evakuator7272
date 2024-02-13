@@ -10,7 +10,7 @@ export default function Header() {
           <div>
             <Fade left>
               <h2>Эвакуатор в Ташкенте</h2>
-              <p className='price'>от 50.000 сум</p>
+              <p className='price'>Подача 20-40 минут</p>
               <p className='price-info'>Мы можем эвакуировать автомобили весом до 5 тонн</p>
             
               <div className='d-flex'>
